@@ -1,0 +1,35 @@
+body{
+	background-repeat: no-repeat;
+	background-image: url("../images/fond7.png");
+	background-position: top center;
+	background-attachment: fixed;
+
+}
+header{
+	border: 2px groove rgb(0,0,0);
+	background-color:  rgb(49,112,180);
+	width: 1050px;
+}
+.go2{
+	font-weight: bold;
+	font-style: oblique;
+}
+.go3{
+	padding-top: 15px;
+	margin-top: 135px;
+	border: 2px solid rgb(49,112,180);
+	border-radius: 5px 5px 5px 5px;
+	background-color: rgb(244,192,168);
+	width: 350px;
+	height: 150px;
+	opacity: 85%;
+
+}
+footer{
+     background-color: rgb(0,0,0);
+	border: 1px solid Black; 
+	color: white;
+	text-align: center;
+	width: 1050px;
+	margin-top: 250px;
+}
