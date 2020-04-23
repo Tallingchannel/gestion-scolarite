@@ -1,0 +1,59 @@
+.go0{
+	border: 2px solid rgb(0,0,0);
+	background-color: rgb(49,112,180);
+	width: 1050px;
+}
+.go1{
+	border-radius: 2px solid blue;
+	background: rgb(120, 240,120);
+	text-align: center;
+	font-family: "Arial Black", Arial, Verdana, serif;
+
+}
+.go2{
+	font-weight: bold;
+	font-style: oblique; 
+}
+.go3{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.05em;
+}
+body{
+	background-image: url("../images/fond7.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	}
+label{
+	font-size: 1.02em;
+	text-align: center;
+position: relative;
+display: inline-block;
+width:68px;
+}
+.go6{
+
+background-color: rgb(244,192,168);	
+color: black;
+	
+}
+
+.go5{
+	margin-top: 100px;
+	margin-bottom: 10px;
+    border:2px groove blue;
+    background-color: rgb(244,192,168);
+	text-align: left;
+	height: 500px;
+	width: 480px;
+	opacity: 90%;
+}
+
+footer{
+       background-color: rgb(0,0,0);
+	border: 1px solid Black; 
+	color: white;
+	text-align: center;
+	width: 1050px;
+	margin-top: 150px;
+}
