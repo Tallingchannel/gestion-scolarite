@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme formEtudiant 'bootstrap_4_layout.html.twig' %}
+
+{% block title %}
+{% if editmode %}
+Modification d'un etudiant!
+{% else %}
+Ajout d'un etudiant!
+{% endif %}
+{% endblock %}
+
+{% block body %}
+
+{% if editmode %}
+<h1>Page de modification d'un étudiant!</h1>
+{% else %}
+<h1>Page d'ajout d'un étudiant!</h1>
+{% endif %}
+
+
+{{ form_start(formEtudiant) }}
+
+{{ form_row(formEtudiant.nom, {'attr': {'placeholder': "Ex: Talling Djafa"} }) }}
+{{ form_row(formEtudiant.prenom, {'attr': {'placeholder': "Ex: channel borris"} }) }}
+{{ form_row(formEtudiant.matricule, {'attr': {'placeholder': "Ex: 28GSI02"} }) }}
+{{ form_row(formEtudiant.age, {'attr': {'placeholder': "Ex: 19"} }) }}
+{{ form_row(formEtudiant.telephone, {'attr': {'placeholder': "Ex: 653667143"} }) }}
+{{ form_row(formEtudiant.filiere, {'attr': {'placeholder': "Ex: GSI"} }) }}
+{{ form_row(formEtudiant.niveau, {'attr': {'placeholder': "Ex: II"} }) }}
+{{ form_row(formEtudiant.somme, {'attr': {'placeholder': "Ex: 350000"} }) }}
+{{ form_row(formEtudiant.motif, {'attr': {'placeholder': "Ex: Inscription + 1ere/2eme/3eme tranche "} }) }}
+
+<button type="submit" class="btn btn-success">
+{% if editmode %}
+Enregistrer les modifications 
+{% else %}
+Ajouter l'étudiant
+{% endif %}
+</button>
+{{ form_end(formEtudiant) }}
+
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Suppression d'un etudiant!{% endblock %}
+
+{% block body %}
+
+<H1>Page de suppression d'un étudiant!</H1>
+
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Prénom</th>
+      <th scope="col">Matricule</th>
+      <th scope="col">Age</th>
+      <th scope="col">Téléphone </th>
+      <th scope="col">Filière</th>
+      <th scope="col">Niveau</th>
+      <th scope="col">Somme</th>
+      <th scope="col">Motif</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+
+{% for etudiant in etudiants %}
+  
+  <tbody>
+    <tr class="table-active">
+      
+      <td> {{etudiant.nom}} </td>
+      <td>{{etudiant.prenom}}</td>
+      <td>{{etudiant.matricule}}</td>
+    
+      
+      <td>{{etudiant.age}}</td>
+      <td>{{etudiant.telephone}}</td>
+      <td>{{etudiant.filiere}}</td>
+    
+      
+      <td>{{etudiant.niveau}}</td>
+      <td>{{etudiant.somme}}</td>
+      <td>{{etudiant.motif}}</td>
+      <td><a href="{{path('supprimer_vrai', {'id': etudiant.id})}}" class="btn btn-danger">Supprimer</a></td>
+    
+    </tr>
+  </tbody>
+
+{% endfor %}
+
+</table> 
+
+{% endblock %}

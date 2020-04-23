@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Inscription sur le site!{% endblock %}</title>
+        <link rel="stylesheet" href="http://bootswatch.com/4/flatly/bootstrap.min.css">
+        {% block stylesheets %}{% endblock %}
+    </head>
+
+{% block body %}
+ <p></p>
+ <p>*</p>
+<center>
+ <h2>Formulaire d'inscription sur "QUEENCHAMA"</h2>
+</center>
+<p></p>
+<p>*</p>
+
+ {{form_start(form)}}
+
+ {{form_row(form.email, {'label':'*E-mail', 'attr':{'placeholder':"Votre adresse e-mail"}})}}
+ {{form_row(form.username, {'label':'*Nom d\'utilisateur', 'attr':{'placeholder':"Votre nom d\'utilisateur"}})}}
+ {{form_row(form.password, {'label':'*Mot de passe', 'attr':{'placeholder':"Votre mot de passe"}})}}
+ {{form_row(form.confirm_password, {'label':'*Confirmation du mot de passe', 'attr':{'placeholder':"Répétez votre mot de passe"}})}}
+
+ <button type="submit" class="btn btn-primary">Inscription !</button>
+
+ {{form_end(form)}}
+
+ <?php
+echo ?><link rel="stylesheet" href="../css/mg.css">
+<?php
+?>
+
+ {% endblock %}
